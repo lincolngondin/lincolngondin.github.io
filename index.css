@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+}
+#main{
+	display:grid;
+	height: 100vh;
+	grid-template-rows: 1fr 5fr 1fr;
+	grid-template-columns: 1fr 7fr;
+	grid-template-areas:
+		"header header"
+		"nav content"
+		"footer footer";
+	grid-gap: 5px;
+	background-color: #ddd;
+}
+.site-area{
+	background-color: #aaa;
+}
+#container-header{
+	grid-area: header;
+	text-align: center;
+}
+#container-nav{
+	grid-area: nav;
+}
+#container-content{
+	grid-area: content;
+}
+#container-footer{
+	grid-area: footer;
+	text-align: center;
+}
