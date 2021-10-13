@@ -1,32 +1,64 @@
-body{
+*{
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 #main{
-	display:grid;
-	height: 100vh;
-	grid-template-rows: 1fr 5fr 1fr;
-	grid-template-columns: 1fr 7fr;
-	grid-template-areas:
-		"header header"
-		"nav content"
-		"footer footer";
-	grid-gap: 5px;
-	background-color: #ddd;
+	height: 100%;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
-.site-area{
-	background-color: #aaa;
+#header{
+	height: 10%;
+	width: 100%;
+	background: darkblue;
+	position: fixed;
 }
-#container-header{
-	grid-area: header;
-	text-align: center;
+#content-area{
+	margin-top: 10%;
+	min-height: 100%;
+	background: black;
 }
-#container-nav{
-	grid-area: nav;
+#navbar{
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
-#container-content{
-	grid-area: content;
+#navbar a{
+	font-size: 3rem;
+	color: white;
+	text-decoration: none;
 }
-#container-footer{
-	grid-area: footer;
-	text-align: center;
+#about{
+	color:  white;
+	font-size: 4rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#works{
+	background: coral;
+	height: 40%;
+}
+#contacts{
+	background: blueviolet;
+	height: 20%;
+	display: flex;
+	align-items: center;
+}
+#contacts p{
+	font-size: 4rem;
+	color: white;
+	display: inline;
+	margin-left: 2rem;
+}
+#contacts a{
+	color: white;
+	margin: 1.5rem;
+	font-size: 3.5rem;
+	text-decoration-color: red;
 }
