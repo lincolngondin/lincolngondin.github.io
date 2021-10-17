@@ -45,8 +45,9 @@
 }
 #contacts {
     background: blueviolet;
-    height: 20%;
+    min-height: 1rem;
     display: flex;
+    padding: 1rem;
 }
 #about h1{
 	color: white;
@@ -66,21 +67,20 @@
 }
 .links-container{
 	display: flex;
-	align-items: center;
-	padding: 0 5%;
-	justify-content: space-around;
 	height: 100%;
+	align-items: center;
+	justify-content: space-around;
 	flex: 7;
 }
 .links-container img{
-	max-width: 80%;
+	max-width: 90%;
 	aspect-ratio: 1;
 }
 .msg-container{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 2%;
+	padding-left: 1rem;
 	flex: 3;
 }
 .work-tile{
@@ -92,6 +92,12 @@
 	color: white;
 	font-size: 2rem;
 	margin: 5%;
+}
+@media (min-width: 800px){
+	.links-container img{
+		max-width: 50%;
+		aspect-ratio: 1;
+	}
 }
 @media (max-width: 400px){
 	#about h1{
